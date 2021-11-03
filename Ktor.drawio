@@ -1,1 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2021-11-03T06:15:08.829Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" version="15.6.6" etag="1r2yBs2bEswvrJuclQgz" type="github"><diagram id="v02On1lfMs6m5p3coq2o">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-03T06:38:53.173Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="NiBt657_cj66PdnGMqP0" version="15.6.6" type="github">
+  <diagram id="v02On1lfMs6m5p3coq2o" name="Page-1">
+    <mxGraphModel dx="963" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="320" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-2" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d6b656;fillColor=#fff2cc;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="280" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-3" value="Main Thread" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-4" value="Coroutine Thread" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="670" y="200" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="120" y="430" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-8" value="CoroutineBuilder" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-11" value="" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=default;fontColor=default;strokeColor=default;entryX=0.335;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="kDvmmwpO6Gp6joqLQOKr-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="187" y="360" as="sourcePoint" />
+            <mxPoint x="187" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-12" value="build(cb: (args: varargs) -&amp;gt; Any) {&lt;br&gt;CoroutineThread.add(cb)&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="130" y="447.5" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-14" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;labelBackgroundColor=default;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="kDvmmwpO6Gp6joqLQOKr-6" target="kDvmmwpO6Gp6joqLQOKr-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="440" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;align=right;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-17" value="" style="rounded=1;whiteSpace=wrap;html=1;align=right;fillColor=none;strokeColor=#FFFFFF;fontColor=default;dashed=1;dashPattern=1 1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-5" value="&lt;b&gt;Server.on&lt;/b&gt;(&lt;br&gt;&lt;font&gt;&#39;request&#39;&lt;/font&gt;,&lt;br&gt;&lt;font&gt;coroutineBuilder.build&lt;/font&gt;&lt;br&gt;)" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="140" y="280" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-7" value="Ktor.main" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-18" value="&lt;font style=&quot;font-size: 13px&quot;&gt;Ktor&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="70" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-19" value="" style="rounded=1;whiteSpace=wrap;html=1;align=right;fillColor=none;strokeColor=#FFFFFF;fontColor=default;dashed=1;dashPattern=1 1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kDvmmwpO6Gp6joqLQOKr-20" value="&lt;font style=&quot;font-size: 13px&quot; color=&quot;#ffffff&quot;&gt;Kotlin Coroutine Lib&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
